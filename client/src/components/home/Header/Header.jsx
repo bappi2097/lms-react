@@ -12,8 +12,14 @@ const Header = () => {
     >
       <Box
         sx={{
-          mx: { xs: "auto", sm: "1rem", md: "2.5rem", lg: "10rem" },
-          my: "1.5rem",
+          mx: {
+            xs: "auto",
+            sm: "1em",
+            md: "2.5em",
+            lg: "10em",
+            xl: "15em",
+          },
+          my: "1.5em",
         }}
         className={classes.headerBody}
       >

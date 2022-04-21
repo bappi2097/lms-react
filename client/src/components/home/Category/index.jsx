@@ -8,6 +8,7 @@ const Category = () => {
       component="section"
       className={classes.courseSection}
       rowSpacing={3}
+      sx={{ px: { md: "7em", lg: "10em" } }}
     >
       <Grid item component="header" className={classes.courseHeader}>
         <Typography component="h1">
@@ -15,9 +16,14 @@ const Category = () => {
         </Typography>
       </Grid>
       <Grid item>
-        <Grid container rowSpacing={3}>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+          style={{ marginLeft: 0 }}
+        >
           {[...Array(10)].map((x, i) => (
-            <Grid key={i} item sx={{ mx: "auto" }}>
+            <Grid key={i} item>
               <CourseCard />
             </Grid>
           ))}

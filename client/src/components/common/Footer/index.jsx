@@ -1,13 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import classes from "./style.module.scss";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import {
+  GrLinkedinOption,
+  GrFacebookOption,
+  GrInstagram,
+  GrYoutube,
+} from "react-icons/all";
+
 const Footer = () => {
   return (
     <Box component="footer" className={classes.footer}>
-      <div>
+      <div className={classes.footerLink}>
         <ul>
           <li>
             <a href="#">About</a>
@@ -26,31 +29,36 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className={classes.footerIconLink}>
         <ul>
           <li>
             <a href="#">
-              <FacebookIcon />
+              <GrFacebookOption />
             </a>
           </li>
           <li>
             <a href="#">
-              <InstagramIcon />
+              <GrInstagram />
             </a>
           </li>
           <li>
             <a href="#">
-              <YouTubeIcon />
+              <GrYoutube />
             </a>
           </li>
           <li>
             <a href="#">
-              <LinkedInIcon />
+              <GrLinkedinOption />
             </a>
           </li>
         </ul>
       </div>
-      <Typography>
+      <Typography
+        sx={{
+          textAlign: "center",
+          width: { sm: "100%", md: 400, lg: 500, xl: 600 },
+        }}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mollis
         malesuada pulvinar nibh at sit risus dictum sem cursus.
       </Typography>
