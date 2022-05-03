@@ -17,7 +17,10 @@ const BreadCrumb = (props) => {
           color="inherit"
           href="/"
         >
-          <HomeIcon sx={{ mr: 0.5, color: "#00B22D" }} fontSize="inherit" />
+          <HomeIcon
+            sx={{ mr: 0.5, color: "#00B22D", mb: 0.5 }}
+            fontSize="inherit"
+          />
           Home
         </Link>
         {routes.map((path, index, arr) => {
