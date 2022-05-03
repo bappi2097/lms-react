@@ -11,14 +11,9 @@ const Category = () => {
         </Typography>
       </Grid>
       <Grid item>
-        <Grid
-          container
-          spacing={{ xs: 2, md: 3 }}
-          columns={{ xs: 4, sm: 8, md: 12 }}
-          style={{ marginLeft: 0 }}
-        >
+        <Grid container spacing={1}>
           {[...Array(10)].map((x, i) => (
-            <Grid key={i} item>
+            <Grid key={i} item xs={12} sm={6} md={4} lg={3} xl={2}>
               <CourseCard />
             </Grid>
           ))}

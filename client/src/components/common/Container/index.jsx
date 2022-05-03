@@ -5,9 +5,9 @@ const Container = (props) => {
     <Box
       component="section"
       sx={{
-        px: { xs: "1em", md: "7em", lg: "10em" },
+        mx: { xs: "1em", md: "5em", lg: "7em" },
         justifyContent: "center",
-        marginBottom: "1em",
+        my: "1em",
       }}
     >
       {props.children}
