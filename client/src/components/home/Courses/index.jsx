@@ -1,15 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
+import Container from "../../common/Container";
 import CourseCard from "../../common/CourseCard";
 import classes from "./style.module.scss";
 const Courses = () => {
   return (
-    <Grid
-      container
-      component="section"
-      className={classes.courseSection}
-      rowSpacing={3}
-      sx={{ px: { md: "7em", lg: "10em" } }}
-    >
+    <Grid container component={Container} rowSpacing={3}>
       <Grid item component="header" className={classes.courseHeader}>
         <Typography>Here is Our</Typography>
         <Typography component="h1">Top Courses</Typography>
