@@ -5,7 +5,7 @@ const Container = (props) => {
     <Box
       component="section"
       sx={{
-        mx: { xs: "1em", md: "5em", lg: "7em" },
+        mx: { xs: "1em", md: "4em" },
         justifyContent: "center",
         my: "1em",
       }}
